@@ -47,10 +47,10 @@
 
         <section class="row line-form">
                 
-                <div class="col-5 txt-r">
+                <div class="col-lg-5 col-sm-2 txt-r">
                     <label for="last_Name">Nom: </label> 
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-sm-10">
 
                     <input class="name" name="last_Name" type="text">
 
@@ -66,19 +66,19 @@
             </div> -->
 
             <section class=" row line-form">
-                <div class="col-5 txt-r">
+                <div class="col-lg-5 col-sm-2 txt-r">
                     <label for="email">Email: </label>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-sm-10">
                     <input class="full-line" name="email" type="email">
                 </div>
             </section>
 
             <section class="row line-form">
-                <div class="col-5 txt-r">
+                <div class="col-lg-5 col-sm-2 txt-r">
                     <label for="country">Country: </label>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-sm-10">
                         <input class="country" name="country" type="text">
                 <label for="genre">Genre: </label>
                     <select name="genre">
@@ -90,19 +90,19 @@
             </section>
             
             <section class="row line-form">
-            <div class="col-5 txt-r">
+            <div class="col-lg-5 col-sm-2 txt-r">
                 <label for="subject">Sujet: </label>
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-sm-10">
                 <input class="full-line" name="subject" type="text">
             </div>
             </section>
 
             <section class="row line-form">
-            <div class="col-5 txt-r">
+            <div class="col-lg-5 col-sm-2 txt-r">
                 <label for="message">Message:</label>
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-sm-10">
                 <textarea class="full-line" name="message"></textarea>
             </div>
             <input class="submit" type="submit" name="submit" value="envoyer">
