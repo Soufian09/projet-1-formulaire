@@ -76,7 +76,7 @@
 
             <section class="row line-form">
                 <div class="col-lg-5 col-sm-2 txt-r">
-                    <label for="country">Country: </label>
+                    <label for="country">Pays: </label>
                 </div>
                 <div class="col-lg-7 col-sm-10">
                         <input class="country" name="country" type="text">
@@ -103,7 +103,7 @@
                 <label for="message">Message:</label>
             </div>
             <div class="col-lg-7 col-sm-10">
-                <textarea class="full-line" name="message"></textarea>
+                <textarea rows="7" cols="50" class="full-line" name="message"></textarea>
             </div>
             <input class="submit" type="submit" name="submit" value="envoyer">
         </section>
