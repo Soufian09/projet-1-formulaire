@@ -1,16 +1,3 @@
-<?php
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/_">
-    <script src="main.js"></script>
-</head>
-<body>
     <nav class="navbar navbar-dark navbar-expand-md justify-content-between"> 
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
@@ -39,5 +26,3 @@
             </div>
         </div>
     </nav>
-</body>
-</html>

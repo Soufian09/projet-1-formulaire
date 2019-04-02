@@ -37,6 +37,7 @@
     </head>
 
     <body>
+    <?php include "navbar.php" ?>
         <img src="assets/img/logo-poulette-white.png" alt="logo de hacker poulette">
         <h1>Formulaire de contact</h1>
         <div class="blue-divider"></div>
