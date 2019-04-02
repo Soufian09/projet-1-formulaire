@@ -16,7 +16,7 @@
                     </li>
                 </ul>
             </div>
-                <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"><img src="/img/hackers-poulette-logo.png" class="logo"></a>
+                <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"><img src="assets/img/hackers-poulette-logo.png" class="logo"></a>
                 <div class="navbar-collapse collapse dual-nav w-50 order-2">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="https://twitter.com/raspberry_pi"><i class="fa fa-twitter"></i></a></li>
