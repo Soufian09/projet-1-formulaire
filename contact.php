@@ -34,78 +34,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/contact.css">
-
     </head>
+
     <body>
         <img src="assets/img/logo-poulette-white.png" alt="logo de hacker poulette">
         <h1>Formulaire de contact</h1>
         <div class="blue-divider"></div>
+        <!-- <div class="BOX"> -->
+            <form class="container-fluid" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <section class="row line-form">
+                    
+                    <div class="col-lg-5 col-sm-12 txt-r">
+                        <label for="last_Name">Nom: </label> 
+                    </div>
 
-        <form class="container-fluid" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                    <div class="col-lg-7 col-sm-12">
+                        <input class="name" name="last_Name" type="text">
+                        <div class="test">
+                            <label for="first_name">Prénom: </label>
+                            <input class="name" name="first_name" type="text">
+                        </div>
+                    </div>
 
-        <section class="row line-form">
+            </section>
+
+                <div>
+                    <label class="forBot" for="honney_Pot">Nom: </label>
+                    <input class="forBot" name="honney_Pot" type="text">
+                </div>
+
+                <section class="row line-form">
+                    <div class="col-lg-5 col-sm-12 txt-r">
+                        <label for="email">Email: </label>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <input class="full-line" name="email" type="email">
+                    </div>
+                </section>
+
+                <section class="row line-form">
+                    <div class="col-lg-5 col-sm-12 txt-r">
+                        <label for="country">Pays: </label>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <input class="country" name="country" type="text">
+                    <label for="genre">Genre: </label>
+                        <select name="genre">
+                            <option value="H">Homme</option>
+                            <option value="F">Femme</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                </section>
                 
-                <div class="col-lg-5 col-sm-2 txt-r">
-                    <label for="last_Name">Nom: </label> 
+                <section class="row line-form">
+                <div class="col-lg-5 col-sm-12 txt-r">
+                    <label for="subject">Sujet: </label>
                 </div>
-                <div class="col-lg-7 col-sm-10">
-
-                    <input class="name" name="last_Name" type="text">
-
-                    <label for="first_name">Prénom: </label>
-                    <input class="name" name="first_name" type="text">
+                <div class="col-lg-7 col-sm-12">
+                    <input class="full-line" name="subject" type="text">
                 </div>
+                </section>
 
-        </section>
-
-            <div>
-                <label class="forBot" for="honney_Pot">Nom: </label>
-                <input class="forBot" name="honney_Pot" type="text">
-            </div>
-
-            <section class=" row line-form">
-                <div class="col-lg-5 col-sm-2 txt-r">
-                    <label for="email">Email: </label>
+                <section class="row line-form">
+                <div class="col-lg-5 col-sm-12 txt-r">
+                    <label for="message">Message:</label>
                 </div>
-                <div class="col-lg-7 col-sm-10">
-                    <input class="full-line" name="email" type="email">
+                <div class="col-lg-7 col-sm-12">
+                    <textarea rows="7" cols="50" class="full-line" name="message"></textarea>
                 </div>
+                <input class="submit" type="submit" name="submit" value="envoyer">
             </section>
+            </form>
+        <!-- </div> -->
 
-            <section class="row line-form">
-                <div class="col-lg-5 col-sm-2 txt-r">
-                    <label for="country">Pays: </label>
-                </div>
-                <div class="col-lg-7 col-sm-10">
-                    <input class="country" name="country" type="text">
-                <label for="genre">Genre: </label>
-                    <select name="genre">
-                        <option value="H">Homme</option>
-                        <option value="F">Femme</option>
-                        <option value="other">Autre</option>
-                    </select>
-                </div>
-            </section>
-            
-            <section class="row line-form">
-            <div class="col-lg-5 col-sm-2 txt-r">
-                <label for="subject">Sujet: </label>
-            </div>
-            <div class="col-lg-7 col-sm-10">
-                <input class="full-line" name="subject" type="text">
-            </div>
-            </section>
-
-            <section class="row line-form">
-            <div class="col-lg-5 col-sm-2 txt-r">
-                <label for="message">Message:</label>
-            </div>
-            <div class="col-lg-7 col-sm-10">
-                <textarea rows="7" cols="50" class="full-line" name="message"></textarea>
-            </div>
-            <input class="submit" type="submit" name="submit" value="envoyer">
-        </section>
-        </form>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

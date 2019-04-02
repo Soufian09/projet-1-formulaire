@@ -1,31 +1,17 @@
-@font-face {
-    font-family: Bellota;
-    src: url("../font/Bellota-Regular.otf");
-}
+@import 'GLOBAL';
 
-body {
-    background-color: #303030;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Bellota;
-}
-
-.txt-r{
-    text-align: right;
-}
-.name{
-    width: 200px;
+.name {
+    width: 100%;
     margin-right: 20px;
 }
-.full-line{
-    width: 540px;
-}
-.country{
-    width: 310px;
-    margin-right: 20px;
 
+.full-line {
+    width: 100%;
+}
+
+.country {
+    width: 100%;
+    margin-right: 20px;
 }
 
 input,
@@ -42,16 +28,6 @@ p {
     margin: 4px;
 }
 
-.blue-divider {
-    border-top: 1px solid #15c5bd;
-    width: 250px;
-    margin-bottom: 60px;
-}
-
-h1 {
-    margin: 15px;
-}
-
 .submit {
     border-radius: 30px;
     padding: 0 20px;
@@ -61,4 +37,44 @@ h1 {
 
 .forBot {
     display: none;
+}
+.popo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    margin-bottom: 50px;
+}
+.test{
+    display: inline;
+}
+@media screen and (min-width: 605px) {
+    .name {
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .full-line {
+        width: 540px;
+    }
+
+    .country {
+        width: 310px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .txt-r {
+        text-align: right;
+    }
+
+    form{
+        .BOX{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
