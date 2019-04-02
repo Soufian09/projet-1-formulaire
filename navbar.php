@@ -12,11 +12,10 @@
                         <a class="nav-link" href="produits.html"><i class="fa fa fw fa-code"></i>Produits</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="form.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                        <a class="nav-link" href="contact.php"><i class="fa fa-fw fa-envelope"></i>Contact</a>
                     </li>
                 </ul>
             </div>
-                <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"><img src="assets/img/hackers-poulette-logo.png" class="logo"></a>
                 <div class="navbar-collapse collapse dual-nav w-50 order-2">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="https://twitter.com/raspberry_pi"><i class="fa fa-twitter"></i></a></li>
@@ -26,3 +25,4 @@
             </div>
         </div>
     </nav>
+    <img src="assets/img/logo-poulette-white.png" alt="logo de hacker poulette">

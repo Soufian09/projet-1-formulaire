@@ -32,13 +32,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>php sanatize</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/contact.css">
     </head>
 
     <body>
     <?php include "navbar.php" ?>
-        <img src="assets/img/logo-poulette-white.png" alt="logo de hacker poulette">
+       
         <h1>Formulaire de contact</h1>
         <div class="blue-divider"></div>
         <!-- <div class="BOX"> -->

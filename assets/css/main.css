@@ -1,48 +1,12 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    background: #2E2D27;
-    color: whitesmoke;
-    font-family: 'bellota';
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 50%;
-  }
+* { margin: 0px; padding: 0px; background: #2E2D27; color: whitesmoke; font-family: 'bellota'; }
 
-  .card-img-top{
-    height:250px;
-    width:100%;
- overflow: hidden;
-  }
+form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.text-muted{
-  color: yellow;
-}
+.logo { width: 50%; }
 
-.one
-{
-  margin-top: 4%;
-  padding: 6%;
-}
+.card-img-top { height: 250px; width: 100%; overflow: hidden; }
 
+.text-muted { color: yellow; }
 
-
-.title
-{
-  text-align: center;
-}
-.carous
-{
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
+.one { margin-top: 4%; padding: 6%; }
 /*# sourceMappingURL=main.css.map */
