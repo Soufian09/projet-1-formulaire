@@ -51,10 +51,10 @@
                     </div>
 
                     <div class="col-lg-7 col-sm-12">
-                        <input class="name" name="last_Name" type="text">
+                        <input class="name" name="last_Name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
                         <div class="test">
                             <label for="first_name">Prénom: </label>
-                            <input class="name" name="first_name" type="text">
+                            <input class="name" name="first_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                         <label for="email">Email: </label>
                     </div>
                     <div class="col-lg-7 col-sm-12">
-                        <input class="full-line" name="email" type="email">
+                        <input class="full-line" name="email" type="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                 </section>
 
