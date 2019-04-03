@@ -6,10 +6,10 @@
             <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="acceuil.html"><i class="fa fa-fw fa-home"></i>Acceuil <span class="sr-only">Acceuil</span></a>
+                        <a class="nav-link pl-0" href="index.php"><i class="fa fa-fw fa-home"></i>Acceuil <span class="sr-only">Acceuil</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produits.html"><i class="fa fa fw fa-code"></i>Produits</a>
+                        <a class="nav-link" href="produits.php"><i class="fa fa fw fa-code"></i>Produits</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="contact.php"><i class="fa fa-fw fa-envelope"></i>Contact</a>

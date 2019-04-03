@@ -17,33 +17,4 @@ h1 { margin: 15px; text-align: center; }
 nav { width: 100%; background-color: rgba(0, 0, 0, 0.589); position: fixed !important; z-index: 1; }
 
 footer { background-color: rgba(0, 0, 0, 0.589); width: 100%; padding: 30px; }
-
-.name { width: 100%; margin-right: 20px; }
-
-.full-line { width: 100%; }
-
-.country { width: 100%; margin-right: 20px; }
-
-input, select, textarea { margin-bottom: 30px; }
-
-label { font-size: 30px; }
-
-p { margin: 4px; }
-
-.submit { border-radius: 30px; padding: 0 20px; margin: 0 auto; font-size: 30px; }
-
-.forBot { display: none; }
-
-.popo { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-form { margin-bottom: 50px; }
-
-.test { display: inline; }
-
-@media screen and (min-width: 605px) { .name { width: 200px; margin-right: 20px; }
-  .full-line { width: 540px; }
-  .country { width: 310px; margin-right: 20px; } }
-
-@media screen and (min-width: 992px) { .txt-r { text-align: right; }
-  form .BOX { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; } }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=produits.css.map */

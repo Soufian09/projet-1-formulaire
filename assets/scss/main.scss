@@ -1,34 +1,35 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    background: #2E2D27;
-    color: whitesmoke;
-    font-family: 'bellota';
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 50%;
-  }
+@import 'GLOBAL';
+@import 'NAVBAR';
+@import 'FOOTER';
 
-  .card-img-top{
-    height:250px;
-    width:100%;
- overflow: hidden;
-  }
-
-.text-muted{
-  color: yellow;
+.main-div{
+  display: flex;
+  justify-content: center;
 }
 
-.one
-{
-  margin-top: 4%;
-  padding: 6%;
+/*ACCEUIL CAROUSEL */
+.carous {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 800px;
+  height: 500px;
+}
+.carousel-control-next-icon{
+  position: relative;
+  left: 50px;
+}
+.carousel-control-prev-icon {
+  position: relative;
+  right: 50px;
+}
+
+.carousel-caption{
+background-color: rgba(0, 0, 0, 0.589);
+padding: 10px;
+position: sticky;
+}
+.carousel-item{
+  width: 400px;
+  height: 476px;
 }
