@@ -12,6 +12,12 @@ h1 { margin: 15px; text-align: center; }
 
 .navbar-dark .navbar-nav .nav-link { color: #fff; }
 
+a { color: #15c5bd; }
+
+a:visited { color: #15c5bd; }
+
+a:hover { color: #fff; text-decoration: none; }
+
 .logo { width: 50%; }
 
 nav { width: 100%; background-color: rgba(0, 0, 0, 0.589); position: fixed !important; z-index: 1; }

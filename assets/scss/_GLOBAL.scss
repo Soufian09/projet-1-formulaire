@@ -37,3 +37,14 @@ h1 {
 .navbar-dark .navbar-nav .nav-link{
     color: #fff;
 }
+
+a{
+    color: #15c5bd;
+    &:visited{
+        color: #15c5bd;
+    }
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+}

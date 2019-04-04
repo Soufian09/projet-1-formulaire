@@ -1,4 +1,5 @@
 <?php
+// FAIRE LE SCRIPT JS POUR NE PAS ENVOYER LE FORM !!!!
 /*
     **********************
 	**   SANITISATION   **
@@ -6,9 +7,9 @@
 */
 // On créé un tableau associatif en précisant les filtres qu'on veut pour chaque input
 $filters_options = array(
-    'first_name'    => FILTER_SANITIZE_STRING,
-    'last_name'     => FILTER_SANITIZE_STRING,
-    'email'         => FILTER_VALIDATE_EMAIL,
+    'first_name'      => FILTER_SANITIZE_STRING,
+    'last_name'       => FILTER_SANITIZE_STRING,
+    'email'           => FILTER_VALIDATE_EMAIL,
     'country'         => FILTER_SANITIZE_STRING,
     'subject'         => FILTER_SANITIZE_STRING,
     'message'         => FILTER_SANITIZE_STRING
@@ -21,9 +22,7 @@ if (isset($_POST['submit'])) {
         // On créé un tableau associatif dans lequel on stoque les valeurs une fois filtrée
         $filter_result = filter_input_array(INPUT_POST, $filters_options);
         // Affichage des données --- !!!!!!!!!!! DEV ONLY !!!!!!!!!!! ---
-        foreach ($filter_result as $key => $value) {
-            echo "<p>" . $key . ": " . $filter_result[$key] . "</p>";
-        }
+        print_r($filter_result);
     } else {
         echo "Merci de remplir tous les champs!";
     }
@@ -44,13 +43,10 @@ $subject = "Nouveau message Hacker Poulette";
 $message_mail = "Nom: " . $filter_result["last_name"] . "<br>" . "Prénom: " . $filter_result["first_name"] . "<br>" . "Pays: " . $filter_result["country"] . "<br>" . "Sujet: " . $filter_result["subject"] . "<br>" . "Message: " . $filter_result["message"];
 // Fonction d'envoie du mail avec conf de ce que j'envoie
 mail($to, $subject, $message_mail, $headers);
-
 ?>
 
-
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,7 +70,7 @@ mail($to, $subject, $message_mail, $headers);
             </div>
 
             <div class="col-lg-7 col-sm-12">
-                <input class="name" name="last_Name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
+                <input class="name" name="last_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
                 <div class="test">
                     <label for="first_name">Prénom: </label>
                     <input class="name" name="first_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
@@ -84,7 +80,6 @@ mail($to, $subject, $message_mail, $headers);
         </section>
 
         <div>
-            <label class="forBot" for="honney_Pot">Nom: </label>
             <input class="forBot" name="honney_Pot" type="text">
         </div>
 
@@ -93,6 +88,7 @@ mail($to, $subject, $message_mail, $headers);
                 <label for="email">Email: </label>
             </div>
             <div class="col-lg-7 col-sm-12">
+                <!-- ADRESSE PRO NON ACCEPTEE -->
                 <input class="full-line" name="email" type="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
         </section>
@@ -102,7 +98,7 @@ mail($to, $subject, $message_mail, $headers);
                 <label for="country">Pays: </label>
             </div>
             <div class="col-lg-7 col-sm-12">
-                <input class="country" name="country" type="text">
+                <input class="country" name="country" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
                 <label for="genre">Genre: </label>
                 <select name="genre">
                     <option value="H">Homme</option>
@@ -136,5 +132,4 @@ mail($to, $subject, $message_mail, $headers);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
