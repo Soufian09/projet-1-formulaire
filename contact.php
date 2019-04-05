@@ -47,6 +47,7 @@ mail($to, $subject, $message_mail, $headers);
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,10 +71,10 @@ mail($to, $subject, $message_mail, $headers);
             </div>
 
             <div class="col-lg-7 col-sm-12">
-                <input class="name" name="last_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
+                <input class="name" name="last_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}" required>
                 <div class="test">
                     <label for="first_name">Prénom: </label>
-                    <input class="name" name="first_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
+                    <input class="name" name="first_name" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}" required>
                 </div>
             </div>
 
@@ -89,7 +90,7 @@ mail($to, $subject, $message_mail, $headers);
             </div>
             <div class="col-lg-7 col-sm-12">
                 <!-- ADRESSE PRO NON ACCEPTEE -->
-                <input class="full-line" name="email" type="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input class="full-line" name="email" type="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             </div>
         </section>
 
@@ -98,7 +99,7 @@ mail($to, $subject, $message_mail, $headers);
                 <label for="country">Pays: </label>
             </div>
             <div class="col-lg-7 col-sm-12">
-                <input class="country" name="country" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}">
+                <input class="country" name="country" type="text" minlength="3" maxlength="30" pattern="[a-zA-Z\-âêîôûäëïöüàèéòù]{3,30}" required>
                 <label for="genre">Genre: </label>
                 <select name="genre">
                     <option value="H">Homme</option>
@@ -113,7 +114,7 @@ mail($to, $subject, $message_mail, $headers);
                 <label for="subject">Sujet: </label>
             </div>
             <div class="col-lg-7 col-sm-12">
-                <input class="full-line" name="subject" type="text">
+                <input class="full-line" name="subject" type="text" required>
             </div>
         </section>
 
@@ -122,7 +123,7 @@ mail($to, $subject, $message_mail, $headers);
                 <label for="message">Message:</label>
             </div>
             <div class="col-lg-7 col-sm-12">
-                <textarea rows="7" cols="50" class="full-line" name="message"></textarea>
+                <textarea rows="7" cols="50" class="full-line" name="message" required></textarea>
             </div>
             <input class="submit" type="submit" name="submit" value="envoyer">
         </section>
@@ -132,4 +133,5 @@ mail($to, $subject, $message_mail, $headers);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
