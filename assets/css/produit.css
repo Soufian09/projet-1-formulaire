@@ -1,0 +1,28 @@
+@font-face { font-family: Bellota; src: url("../font/Bellota-Regular.otf"); }
+
+body { background-color: #303030; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: Bellota; padding-top: 1.5; }
+
+html, body { margin: 0; }
+
+.blue-divider { border-top: 1px solid #15c5bd; width: 250px; margin-bottom: 60px; }
+
+h1 { margin: 15px; text-align: center; }
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link { color: #15c5bd; }
+
+.navbar-dark .navbar-nav .nav-link { color: #fff; }
+
+.logo { width: 50%; }
+
+nav { width: 100%; background-color: rgba(0, 0, 0, 0.589); position: fixed !important; z-index: 1; }
+
+footer { background-color: rgba(0, 0, 0, 0.589); width: 100%; padding: 30px; }
+
+.card-img-top { height: 250px; width: 100%; overflow: hidden; }
+
+.text-muted { color: yellow; padding: 10px; }
+
+.one { margin-top: 4%; padding: 6%; }
+
+.title { text-align: center; }
+/*# sourceMappingURL=produit.css.map */
