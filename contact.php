@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         // On créé un tableau associatif dans lequel on stoque les valeurs une fois filtrée
         $filter_result = filter_input_array(INPUT_POST, $filters_options);
         // Affichage des données --- !!!!!!!!!!! DEV ONLY !!!!!!!!!!! ---
-        print_r($filter_result);
+        // print_r($filter_result);
     } else {
         echo "Merci de remplir tous les champs!";
     }
