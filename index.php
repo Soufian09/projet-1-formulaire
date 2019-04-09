@@ -20,8 +20,8 @@ echo $_SERVER['REQUEST_URI'];
     <?php include "navbar.php" ?>
     <h1 class="title">Bienvenue chez Hackers Poulette</h1>
     <div class="blue-divider"></div>
-    <div class="main-div container-fluid">
-        <div class="carous">
+    <main class="main-div container-fluid">
+        <section class="carous">
             <div id="carouselwithIndicators" class="carousel slide w-50" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -29,31 +29,31 @@ echo $_SERVER['REQUEST_URI'];
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <section class="carousel-inner">
+                    <article></article> class="carousel-item active">
                         <a href="produits.php"> <img class="d-block w-100" src="assets/img/raspi.gif" alt="raspi.gif"></a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Découvrer les dernières nouveautés Raspberry!</h5>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="carousel-item">
+                    <article class="carousel-item">
                         <a href="https://raspbian-france.fr/actualites-raspberry-pi/"> <img class="d-block w-100" src="assets/img/news.gif" alt="news.gif"></a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Suivez l'actu tech pour ne rien rater </h5>
 
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="carousel-item">
+                    <article class="carousel-item">
                         <a href="https://www.cdiscount.com/informatique/r-raspberry+pi+3.html#_his_"> <img class="d-block w-100" src="assets/img/promo.gif" alt="promo.gif"> </a>
 
                         <div class="carousel-caption d-none d-md-block">
                             <h5>PROMO SPECIAL !! </h5>
                         </div>
-                    </div>
+                    </article>
 
-                </div>
+                </section>
 
                 <a class="carousel-control-prev" href="#carouselwithIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,8 +65,8 @@ echo $_SERVER['REQUEST_URI'];
                     <span class="sr-only">Suivant</span>
                 </a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <?php include "footer.php" ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
